@@ -1,0 +1,10 @@
+
+function init() {
+    const btn1 = document.querySelector(' . js= + ');
+
+    btn1.onclick = function () {
+        alert ("Клик");
+    }
+}
+window.onload=init;
+

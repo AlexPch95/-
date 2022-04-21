@@ -1,0 +1,5 @@
+.white-rabbite {
+       width: 50%
+       color: white;
+       background-color: black;
+       font-size: 30 px; 

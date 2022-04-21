@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css"/>
+    <title>Document</title>
+</head>
+<body>
+      
+      <button data-toggle-id="HOME">
+        HOME
+      </button>
+      
+      <form id="HOME" hidden>
+        HOME CONTANT 
+      </form>
+
+      <button data-toggle-id="PROFILE">
+        PROFILE CONTANT
+      </button>
+      
+      <form id="PROFILE" hidden>
+        PROFILE CONTANT 
+      </form>
+
+      <button data-toggle-id="CONTACT">
+        CONTACT
+      </button>
+      
+      <form id="CONTACT" hidden>
+        CONTACT CONTANT 
+      </form>
+      
+
+
+      <script>
+        document.addEventListener('click', function(event) {
+          let id = event.target.dataset.toggleId;
+          if (!id) return;
+      
+          let elem = document.getElementById(id);
+      
+          elem.hidden = !elem.hidden;
+        });
+      </script>
+
+</body>
+</html>
